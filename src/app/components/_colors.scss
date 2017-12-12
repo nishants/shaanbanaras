@@ -1,0 +1,9 @@
+$golden_gradient: #{bottom, #FBD249, #F5A623};
+
+.golden-gradient{
+  background: #FBD249;
+  background: -webkit-linear-gradient($golden_gradient);
+  background: -o-linear-gradient($golden_gradient);
+  background: -moz-linear-gradient($golden_gradient);
+  background: linear-gradient($golden_gradient);
+}
