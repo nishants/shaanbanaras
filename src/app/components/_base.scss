@@ -20,6 +20,12 @@ input{
   clear:both;
 }
 
+.overflow-text{
+  white-space:nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 @mixin transform( $property) {
   -webkit-transform: $property;
   -moz-transform: $property;
@@ -62,11 +68,36 @@ input{
   -o-transition:      $value;
   transition:         $value;
 }
+@mixin animation($value){
+  -webkit-animation : $value;
+  -o-animation      : $value;
+  -ms-animation     : $value;
+  animation         : $value;
+}
+@mixin animationFunction($value){
+  -webkit-animation-timing-function: $value;
+  -moz-animation-timing-function: $value;
+  -o-animation-timing-function: $value;
+  animation-timing-function: $value;
+}
+
+@mixin animationName($value){
+  -webkit-animation-name: $value;
+  -moz-animation-name: $value;
+  -o-animation-name: $value;
+  animation-name: $value;
+}
 
 @mixin gradient($value){
   background: -moz-linear-gradient($value); /* FF3.6-15 */
   background: -webkit-linear-gradient($value); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient($value); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+@mixin userSelect($value){
+  -webkit-user-select: $value;
+  -moz-user-select: $value;
+  -ms-user-select: $value;
+  user-select: $value;
 }
 
 ul.undo-list{
@@ -76,6 +107,22 @@ ul.undo-list{
   display: block;
 }
 
+a.undo-link{
+  text-decoration: none;
+  line-height: inherit;
+  color: inherit;
+  display: block;
+}
+
+a.undo-link:active{
+  background-color: inherit;
+  color: inherit;
+}
+
 [ng-click]{
+  cursor: pointer;
+}
+
+button{
   cursor: pointer;
 }

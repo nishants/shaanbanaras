@@ -1,0 +1,19 @@
+#top-bar{
+  ul.navigation{
+    @extend .undo-list;
+    @extend .resize-container;
+    > li{
+      float: left;
+      height: 60px;
+      line-height: 60px;
+      width: 33.33%;
+      color : $theme_active_color;
+      text-align: center;
+      font-weight: $weight_bold;
+      border-left: 1px solid $theme_active_color;
+      a{
+        @extend .undo-link;
+      }
+    }
+  }
+}
