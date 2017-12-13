@@ -1,0 +1,19 @@
+#footer{
+  background-color: black;
+  line-height: 25px;
+  padding: $padding;
+  text-align: center;
+  color: $active_text;
+  font-size: $extra_small_font;
+  margin-top: $padding*5;
+  .credit{
+    .message{
+      font-weight: $weight_light;
+      padding-right: 2px;
+    }
+    .by{
+      font-weight: $weight_bold;
+      font-size: $normal_font;
+    }
+  }
+}
