@@ -2,12 +2,31 @@
   background-color: $contrast_bg;
   ul.menu-items{
     @extend .undo-list;
+    padding: 2*$padding;
     > li{
       display: block;
-      padding: 2*$padding;
+      color: $active_text;
+      box-shadow: $card_shadow;
+      border-radius: 2px;
+      overflow: hidden;
       > img {
         display: block;
         width: 100%;
+      }
+      .details{
+        background: $card_contrast;
+        padding: $padding;
+        text-align: center;
+        line-height: 25px;
+        .item-price{
+          margin-bottom: $padding;
+        }
+        button.golden.add-to-cart{
+          display: block;
+          width: 100%;
+          line-height: $padding*2;
+          border-radius: 25px;
+        }
       }
     }
   }

@@ -1,6 +1,10 @@
 $theme_active_color: #F5A623;
-$golden_gradient: #{bottom, #FBD249, #F5A623};
+$golden_gradient: #{top, #FBD249, #F5A623};
 $contrast_bg: white;
+$card_contrast: #2b2a2a;
+
+$active_text: #fac23c;
+$very_light_black: rgba(0, 0, 0, 0.1);
 
 .golden-gradient{
   background: #FBD249;

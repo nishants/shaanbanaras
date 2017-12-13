@@ -1,0 +1,9 @@
+button{
+  padding: $padding;
+  border: $light_border;
+  font-weight: $weight_bold;
+}
+
+button.golden{
+  @extend .golden-gradient;
+}
