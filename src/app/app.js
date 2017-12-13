@@ -1,1 +1,1 @@
-window.app = angular.module("shaan-banaras", []);
+window.app = angular.module("shaan-banaras", ["ui.router"]);
