@@ -9,11 +9,16 @@
       width: 33.33%;
       color : $theme_active_color;
       text-align: center;
-      font-weight: $weight_bold;
+      font-weight: $weight_light;
       border-left: 1px solid $theme_active_color;
       a{
         @extend .undo-link;
       }
+    }
+    >li.active{
+      @extend .golden-gradient;
+      color: black;
+      font-weight: $weight_normal;
     }
   }
 }
