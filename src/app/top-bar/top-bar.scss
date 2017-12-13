@@ -1,11 +1,17 @@
 #top-bar{
+  position: fixed;
+  z-index: $top_bar_layer;
+  background-color: black;
+  width: 100%;
+  box-shadow: $bar_shadow;
+
   ul.navigation{
     @extend .undo-list;
     @extend .resize-container;
     > li{
       float: left;
-      height: 60px;
-      line-height: 60px;
+      height: $top_bar_height;
+      line-height: $top_bar_height;
       width: 33.33%;
       color : $theme_active_color;
       text-align: center;
@@ -13,6 +19,9 @@
       border-left: 1px solid $theme_active_color;
       a{
         @extend .undo-link;
+        .phone-icon{
+          padding-right: $padding/2;
+        }
       }
     }
     >li.active{

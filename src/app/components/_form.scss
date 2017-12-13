@@ -2,6 +2,7 @@ button{
   padding: $padding;
   border: $light_border;
   font-weight: $weight_bold;
+  outline: none;
 }
 
 button.golden{

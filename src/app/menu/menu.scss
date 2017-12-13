@@ -9,6 +9,8 @@
       box-shadow: $card_shadow;
       border-radius: 2px;
       overflow: hidden;
+      margin-bottom: $padding*2;
+
       > img {
         display: block;
         width: 100%;
