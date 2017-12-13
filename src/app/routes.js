@@ -3,7 +3,8 @@ app.config(["$stateProvider", "$urlRouterProvider", "$locationProvider",function
   $urlRouterProvider.otherwise('/menu');
   $stateProvider
       .state('menu', {
-        url: '/menu',
+        url        : '/menu',
+        controller : 'FoodMenuController',
         templateUrl: 'assets/templates/menu-template.html'
       });
 }]);

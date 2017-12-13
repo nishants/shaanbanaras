@@ -1,1 +1,4 @@
-h1 Menu
+#food-menu
+  ul.menu-items
+    li(ng-repeat='item in foodMenu.items')
+      img(ng-src='{{item.image.preview}}')
