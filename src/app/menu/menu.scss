@@ -1,3 +1,14 @@
 #food-menu{
-
+  background-color: $contrast_bg;
+  ul.menu-items{
+    @extend .undo-list;
+    > li{
+      display: block;
+      padding: 2*$padding;
+      > img {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
 }

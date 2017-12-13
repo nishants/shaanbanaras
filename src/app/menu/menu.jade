@@ -1,4 +1,6 @@
 #food-menu
   ul.menu-items
-    li(ng-repeat='item in foodMenu.items')
+    li(ng-repeat='item in foodMenu.items track by id')
       img(ng-src='{{item.image.preview}}')
+      .details
+        .title(ng-bind='item.title')

@@ -1,7 +1,9 @@
 #cover{
+  position: relative;
+  padding: $padding;
+  box-shadow: $shadow;
   > img{
     display: block;
-    margin: $padding;
     width: calc(100% - #{2*$padding});
   }
 }
