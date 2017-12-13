@@ -1,0 +1,7 @@
+#cover{
+  > img{
+    display: block;
+    margin: $padding;
+    width: calc(100% - #{2*$padding});
+  }
+}
